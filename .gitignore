@@ -1,3 +1,23 @@
+# for maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# for IntelliJ IDEA
+.idea/
+*.iml
+
+# for Eclipse
+.settings/
+*.project
+*.classpath
+
 # Compiled class file
 *.class
 
