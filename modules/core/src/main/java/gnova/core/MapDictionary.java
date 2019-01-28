@@ -105,15 +105,15 @@ public class MapDictionary
          * Map Entry的迭代器，不会为null
          */
         @NotNull
-        private final Iterator<Map.Entry<String, Object>> entrys;
+        private final Iterator<Map.Entry<String, Object>> entries;
 
         /**
          * 构建一个迭代器
          *
-         * @param entrys Map Entry的迭代器，不允许为null
+         * @param entries java.util.Map.Entry的迭代器，不允许为null
          */
-        public Iter(@NotNull Iterator<Map.Entry<String, Object>> entrys) {
-            this.entrys = entrys;
+        public Iter(@NotNull Iterator<Map.Entry<String, Object>> entries) {
+            this.entries = entries;
         }
 
         /**
@@ -124,7 +124,7 @@ public class MapDictionary
          */
         @Override
         public boolean hasNext() {
-            return entrys.hasNext();
+            return entries.hasNext();
         }
 
         /**
@@ -136,7 +136,7 @@ public class MapDictionary
          */
         @Override
         public KeyValue next() throws NoSuchElementException {
-            Map.Entry<String, Object> entry = entrys.next();
+            Map.Entry<String, Object> entry = entries.next();
             if (entry == null) {
                 return null;
             }
