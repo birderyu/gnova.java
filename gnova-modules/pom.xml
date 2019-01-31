@@ -20,9 +20,10 @@
     </description>
 
     <modules>
-        <module>core</module>
-        <module>geometry</module>
-        <module>graph</module>
+        <module>gnova-core</module>
+        <module>gnova-geometry</module>
+        <module>gnova-graph</module>
+        <module>gnova-ql</module>
     </modules>
 
     <dependencies>

@@ -22,6 +22,7 @@
         <jts.version>1.16.0</jts.version>
         <bson.version>3.9.0</bson.version>
         <mongo.version>3.9.0</mongo.version>
+        <joda.version>2.10</joda.version>
 
         <!-- maven compiler target versions -->
         <maven.compiler.source>1.8</maven.compiler.source>
@@ -59,11 +60,18 @@
                 <artifactId>jts-core</artifactId>
                 <version>${jts.version}</version>
             </dependency>
+
+            <!-- https://mvnrepository.com/artifact/joda-time/joda-time -->
+            <dependency>
+                <groupId>joda-time</groupId>
+                <artifactId>joda-time</artifactId>
+                <version>${joda.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
     <modules>
-        <module>modules</module>
+        <module>gnova-modules</module>
     </modules>
 
 </project>
