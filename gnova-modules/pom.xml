@@ -24,6 +24,7 @@
         <module>gnova-geometry</module>
         <module>gnova-graph</module>
         <module>gnova-ql</module>
+        <module>gnova-data</module>
     </modules>
 
     <dependencies>
